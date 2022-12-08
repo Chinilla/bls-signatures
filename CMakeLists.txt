@@ -34,7 +34,7 @@ FetchContent_Declare(Sodium
   GIT_REPOSITORY https://github.com/AmineKhaldi/libsodium-cmake.git
   # Latest commit at the moment this was added here
   # Anchored to libsodium v1.0.18
-  GIT_TAG f73a3fe1afdc4e37ac5fe0ddd401bf521f6bba65
+  GIT_TAG a0c8bbc2b9ac3dc43a30470cb81e17a557ac0a2c
 )
 set(SODIUM_PCH "on" CACHE STRING "")
 set(SODIUM_DISABLE_TESTS "on" CACHE STRING "")
