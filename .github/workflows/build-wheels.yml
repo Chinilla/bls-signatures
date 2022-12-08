@@ -28,6 +28,7 @@ jobs:
             runs-on:
               intel: [macos-latest]
             cibw-archs-macos:
+              arm: arm64
               intel: x86_64
           - name: Ubuntu
             matrix: ubuntu
