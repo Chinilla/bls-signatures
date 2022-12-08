@@ -34,7 +34,7 @@ FetchContent_Declare(Sodium
   GIT_REPOSITORY https://github.com/AmineKhaldi/libsodium-cmake.git
   # Latest commit at the moment this was added here
   # Anchored to libsodium v1.0.18
-  GIT_TAG a0c8bbc2b9ac3dc43a30470cb81e17a557ac0a2c
+  GIT_TAG f73a3fe1afdc4e37ac5fe0ddd401bf521f6bba65
 )
 set(SODIUM_PCH "on" CACHE STRING "")
 set(SODIUM_DISABLE_TESTS "on" CACHE STRING "")
@@ -46,7 +46,7 @@ if(DEFINED ENV{RELIC_MAIN})
   set(RELIC_REPOSITORY "https://github.com/relic-toolkit/relic.git")
 else()
   # This is currently anchored to upstream aecdcae7956f542fbee2392c1f0feb0a8ac41dc5
-  set(RELIC_GIT_TAG "215c69966cb78b255995f0ee9c86bbbb41c3c42b")
+  set(RELIC_GIT_TAG "a0c8bbc2b9ac3dc43a30470cb81e17a557ac0a2c")
   set(RELIC_REPOSITORY "https://github.com/Chinilla/relic.git")
 endif()
 
