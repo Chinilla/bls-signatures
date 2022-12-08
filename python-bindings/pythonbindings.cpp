@@ -26,7 +26,7 @@ namespace py = pybind11;
 using namespace bls;
 
 
-PYBIND11_MODULE(blspy, m)
+PYBIND11_MODULE(chinillablspy, m)
 {
     py::class_<PrivateKey>(m, "PrivateKey")
         .def_property_readonly_static(

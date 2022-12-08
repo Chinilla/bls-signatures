@@ -90,7 +90,7 @@ class get_pybind_include(object):
 
 ext_modules = [
     Extension(
-        "blspy",
+        "chinillablspy",
         [
             "src/elements.cpp",
             "src/schemes.cpp",
@@ -188,7 +188,7 @@ class BuildExt(build_ext):
 
 if platform.system() == "Windows":
     setup(
-        name="blspy",
+        name="chinillablspy",
         author="Mariano Sorgente",
         author_email="mariano@chinilla.com",
         description="BLS signatures in c++ (with python bindings)",
@@ -204,7 +204,7 @@ if platform.system() == "Windows":
     )
 else:
     setup(
-        name="blspy",
+        name="chinillablspy",
         author="Mariano Sorgente",
         author_email="mariano@chinilla.com",
         description="BLS signatures in c++ (python bindings)",
@@ -213,8 +213,7 @@ else:
         long_description=open("README.md").read(),
         long_description_content_type="text/markdown",
         url="https://github.com/Chinilla/bls-signatures",
-        ext_modules=[CMakeExtension("blspy", ".")],
+        ext_modules=[CMakeExtension("chinillablspy", ".")],
         cmdclass=dict(build_ext=CMakeBuild),
         zip_safe=False,
     )
-

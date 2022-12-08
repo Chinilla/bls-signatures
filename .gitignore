@@ -8,10 +8,10 @@ src/MakefilE
 src/cmake_install.cmake
 src/CMakeFile
 build/*
-blspy.egg-info
+chinillablspy.egg-info
 dist
 python-impl/__pycache__/
-blspy.*.so
+chinillablspy.*.so
 .mypy_cache/
 .pytest_chache/
 .eggs/

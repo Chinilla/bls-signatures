@@ -1,8 +1,8 @@
 # BLS Signatures implementation
 
 [![Build and Test C++, Javascript, and Python](https://github.com/Chinilla/bls-signatures/actions/workflows/build-test.yaml/badge.svg)](https://github.com/Chinilla/bls-signatures/actions/workflows/build-test.yaml)
-![PyPI](https://img.shields.io/pypi/v/blspy?logo=pypi)
-![PyPI - Format](https://img.shields.io/pypi/format/blspy?logo=pypi)
+![PyPI](https://img.shields.io/pypi/v/chinillablspy?logo=pypi)
+![PyPI - Format](https://img.shields.io/pypi/format/chinillablspy?logo=pypi)
 ![GitHub](https://img.shields.io/github/license/Chinilla/bls-signatures?logo=Github)
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Chinilla/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bls-signatures/alerts/)
@@ -242,7 +242,7 @@ due to a lack of M1 CI runners. See `.github/workflows/build.yml`. CMake uses
 to download [pybind11](https://github.com/pybind/pybind11) for the Python
 bindings and relic from a chinilla relic forked repository for Windows. Building
 is then managed by [cibuildwheel](https://github.com/joerick/cibuildwheel).
-Further installation is then available via `pip install blspy` e.g. The ci
+Further installation is then available via `pip install chinillablspy` e.g. The ci
 builds include GMP and a statically linked libsodium.
 
 ## Contributing and workflow
@@ -251,7 +251,7 @@ Contributions are welcome and more details are available in chinilla-blockchain'
 [CONTRIBUTING.md](https://github.com/Chinilla/chinilla-blockchain/blob/main/CONTRIBUTING.md).
 
 The main branch is usually the currently released latest version on PyPI.
-Note that at times bls-signatures/blspy will be ahead of the release version
+Note that at times bls-signatures/chinillablspy will be ahead of the release version
 that chinilla-blockchain requires in it's main/release version in preparation
 for a new chinilla-blockchain release. Please branch or fork main and then create
 a pull request to the main branch. Linear merging is enforced on main and

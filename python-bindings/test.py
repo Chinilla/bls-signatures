@@ -3,7 +3,7 @@ import binascii
 import time
 from copy import deepcopy
 
-from blspy import (
+from chinillablspy import (
     AugSchemeMPL,
     BasicSchemeMPL,
     G1Element,
