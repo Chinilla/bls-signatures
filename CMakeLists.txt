@@ -38,7 +38,7 @@ FetchContent_Declare(Sodium
 )
 set(SODIUM_PCH "on" CACHE STRING "")
 set(SODIUM_DISABLE_TESTS "on" CACHE STRING "")
-set(SODIUM_CHIA_MINIMAL "on" CACHE STRING "")
+set(SODIUM_CHINILLA_MINIMAL "on" CACHE STRING "")
 FetchContent_MakeAvailable(Sodium)
 
 if(DEFINED ENV{RELIC_MAIN})
@@ -47,7 +47,7 @@ if(DEFINED ENV{RELIC_MAIN})
 else()
   # This is currently anchored to upstream aecdcae7956f542fbee2392c1f0feb0a8ac41dc5
   set(RELIC_GIT_TAG "215c69966cb78b255995f0ee9c86bbbb41c3c42b")
-  set(RELIC_REPOSITORY "https://github.com/Chia-Network/relic.git")
+  set(RELIC_REPOSITORY "https://github.com/Chinilla/relic.git")
 endif()
 
 message(STATUS "Relic will be built from: ${RELIC_GIT_TAG} and repository ${RELIC_REPOSITORY}")

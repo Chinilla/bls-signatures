@@ -1,14 +1,14 @@
 # BLS Signatures implementation
 
-[![Build and Test C++, Javascript, and Python](https://github.com/Chia-Network/bls-signatures/actions/workflows/build-test.yaml/badge.svg)](https://github.com/Chia-Network/bls-signatures/actions/workflows/build-test.yaml)
+[![Build and Test C++, Javascript, and Python](https://github.com/Chinilla/bls-signatures/actions/workflows/build-test.yaml/badge.svg)](https://github.com/Chinilla/bls-signatures/actions/workflows/build-test.yaml)
 ![PyPI](https://img.shields.io/pypi/v/blspy?logo=pypi)
 ![PyPI - Format](https://img.shields.io/pypi/format/blspy?logo=pypi)
-![GitHub](https://img.shields.io/github/license/Chia-Network/bls-signatures?logo=Github)
+![GitHub](https://img.shields.io/github/license/Chinilla/bls-signatures?logo=Github)
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chia-Network/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chia-Network/bls-signatures/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Chia-Network/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chia-Network/bls-signatures/context:javascript)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Chia-Network/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chia-Network/bls-signatures/context:python)
-[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Chia-Network/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chia-Network/bls-signatures/context:cpp)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chinilla/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bls-signatures/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Chinilla/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bls-signatures/context:javascript)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Chinilla/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bls-signatures/context:python)
+[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Chinilla/bls-signatures.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bls-signatures/context:cpp)
 
 NOTE: THIS LIBRARY IS NOT YET FORMALLY REVIEWED FOR SECURITY
 
@@ -29,9 +29,9 @@ Features:
 * [EIP-2333](https://eips.ethereum.org/EIPS/eip-2333) key derivation (including unhardened BIP-32-like keys)
 * Key and signature serialization
 * Batch verification
-* [Python bindings](https://github.com/Chia-Network/bls-signatures/tree/main/python-bindings)
-* [Pure python bls12-381 and signatures](https://github.com/Chia-Network/bls-signatures/tree/main/python-impl)
-* [JavaScript bindings](https://github.com/Chia-Network/bls-signatures/tree/main/js-bindings)
+* [Python bindings](https://github.com/Chinilla/bls-signatures/tree/main/python-bindings)
+* [Pure python bls12-381 and signatures](https://github.com/Chinilla/bls-signatures/tree/main/python-impl)
+* [JavaScript bindings](https://github.com/Chinilla/bls-signatures/tree/main/js-bindings)
 
 ## Before you start
 
@@ -218,8 +218,8 @@ platforms in `.github/workflows/`.
 
 ## Discussion
 
-Discussion about this library and other Chia related development is in the #dev
-channel of Chia's [public Keybase channels](https://keybase.io/team/chia_network.public).
+Discussion about this library and other Chinilla related development is in the #dev
+channel of Chinilla's [public Keybase channels](https://keybase.io/team/chinilla_network.public).
 
 ## Code style
 
@@ -240,24 +240,24 @@ them with a source wheel on PyPi. MacOS ARM64 is supported but not automated
 due to a lack of M1 CI runners. See `.github/workflows/build.yml`. CMake uses
 [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html)
 to download [pybind11](https://github.com/pybind/pybind11) for the Python
-bindings and relic from a chia relic forked repository for Windows. Building
+bindings and relic from a chinilla relic forked repository for Windows. Building
 is then managed by [cibuildwheel](https://github.com/joerick/cibuildwheel).
 Further installation is then available via `pip install blspy` e.g. The ci
 builds include GMP and a statically linked libsodium.
 
 ## Contributing and workflow
 
-Contributions are welcome and more details are available in chia-blockchain's
-[CONTRIBUTING.md](https://github.com/Chia-Network/chia-blockchain/blob/main/CONTRIBUTING.md).
+Contributions are welcome and more details are available in chinilla-blockchain's
+[CONTRIBUTING.md](https://github.com/Chinilla/chinilla-blockchain/blob/main/CONTRIBUTING.md).
 
 The main branch is usually the currently released latest version on PyPI.
 Note that at times bls-signatures/blspy will be ahead of the release version
-that chia-blockchain requires in it's main/release version in preparation
-for a new chia-blockchain release. Please branch or fork main and then create
+that chinilla-blockchain requires in it's main/release version in preparation
+for a new chinilla-blockchain release. Please branch or fork main and then create
 a pull request to the main branch. Linear merging is enforced on main and
 merging requires a completed review. PRs will kick off a GitHub actions ci
 build and analysis of bls-signatures at
-[lgtm.com](https://lgtm.com/projects/g/Chia-Network/bls-signatures/?mode=list).
+[lgtm.com](https://lgtm.com/projects/g/Chinilla/bls-signatures/?mode=list).
 Please make sure your build is passing and that it does not increase alerts
 at lgtm.
 

@@ -105,14 +105,14 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chia-Network/actions/clean-workspace@main
+      uses: Chinilla/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: chia-network/actions/setup-python@main
+    - uses: chinilla/actions/setup-python@main
       with:
         python-version: ${{ matrix.python.major-dot-minor }}
 
@@ -155,19 +155,19 @@ jobs:
           python -m pip install --upgrade pip
         CIBW_ENVIRONMENT_MACOS: "MACOSX_DEPLOYMENT_TARGET=10.14"
         CIBW_REPAIR_WHEEL_COMMAND_MACOS: >
-          pip uninstall -y delocate && pip install git+https://github.com/Chia-Network/delocate.git
+          pip uninstall -y delocate && pip install git+https://github.com/Chinilla/delocate.git
           && delocate-listdeps {wheel} && delocate-wheel -v {wheel}
           && cp {wheel} {dest_dir}
         CIBW_BEFORE_ALL_WINDOWS: >
           curl -L https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable-msvc.zip > libsodium-1.0.18-stable-msvc.zip
           && 7z x libsodium-1.0.18-stable-msvc.zip
-          && git clone https://github.com/Chia-Network/relic_ietf_64.git
+          && git clone https://github.com/Chinilla/relic_ietf_64.git
           && ls -l relic_ietf_64
-          && git clone https://github.com/Chia-Network/mpir_gc_x64.git
+          && git clone https://github.com/Chinilla/mpir_gc_x64.git
           && ls -l mpir_gc_x64
         CIBW_REPAIR_WHEEL_COMMAND_WINDOWS: >
           ls -l mpir_gc_x64 && pip uninstall -y delocate
-          && pip install git+https://github.com/Chia-Network/delocate.git
+          && pip install git+https://github.com/Chinilla/delocate.git
           && delocate-wheel -v -i mpir_gc_x64/mpir.dll {wheel}
           && delocate-wheel -v -i mpir_gc_x64/mpir_gc.dll {wheel}
           && delocate-wheel -v -i mpir_gc_x64/mpir_broadwell.dll {wheel}
@@ -210,14 +210,14 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chia-Network/actions/clean-workspace@main
+      uses: Chinilla/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: Chia-Network/actions/setup-python@main
+    - uses: Chinilla/actions/setup-python@main
       with:
         python-version: ${{ matrix.python.major-dot-minor }}
 
@@ -252,14 +252,14 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chia-Network/actions/clean-workspace@main
+      uses: Chinilla/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: Chia-Network/actions/setup-python@main
+    - uses: Chinilla/actions/setup-python@main
       with:
         python-version: ${{ matrix.python.major-dot-minor }}
 
@@ -296,14 +296,14 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chia-Network/actions/clean-workspace@main
+      uses: Chinilla/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: Chia-Network/actions/setup-python@main
+    - uses: Chinilla/actions/setup-python@main
       with:
         python-version: ${{ matrix.python.major-dot-minor }}
 

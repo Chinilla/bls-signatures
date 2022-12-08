@@ -29,9 +29,9 @@ target_link_libraries(bls
     sodium
 )
 
-install(DIRECTORY ${relic_SOURCE_DIR}/include/ DESTINATION include/chiabls)
-install(DIRECTORY ${relic_BINARY_DIR}/include/ DESTINATION include/chiabls)
-install(FILES ${HEADERS} DESTINATION include/chiabls)
+install(DIRECTORY ${relic_SOURCE_DIR}/include/ DESTINATION include/chinillabls)
+install(DIRECTORY ${relic_BINARY_DIR}/include/ DESTINATION include/chinillabls)
+install(FILES ${HEADERS} DESTINATION include/chinillabls)
 install(FILES $<TARGET_FILE:bls> DESTINATION lib)
 
 if(BUILD_BLS_TESTS)

@@ -20,9 +20,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Chia-Network/bls-signatures.git"
+    "url": "git@github.com:Chinilla/bls-signatures.git"
   },
-  "homepage": "https://github.com/Chia-Network/bls-signatures/tree/master/js-bindings",
+  "homepage": "https://github.com/Chinilla/bls-signatures/tree/master/js-bindings",
   "author": {
     "name": "Anton Suprunchuk",
     "email": "antouhou@gmail.com",
